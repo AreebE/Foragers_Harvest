@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Forager\'s Harvest</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="warning">Warning: By clicking further, you confirm that you admit that this app is not perfect, including, but not limited to, misidentifying a healthy plant as a poisonous one or having incomplete data on any given plant. We apologize, as there is only so much one person can do.</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirmation">I confirm.</string>
+    <string name="noOpenCamera">Sorry, seems like we couldn\'t open the camera.</string>
+    <string name="askToEnable">\"Please enable the camera to use this feature.</string>
+    <string name="askForCamera">Can you allow us to use the camera?</string>
 </resources>

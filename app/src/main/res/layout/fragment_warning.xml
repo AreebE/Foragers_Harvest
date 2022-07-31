@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WarningFragment">
+    android:orientation="vertical"
+    tools:context=".WarningFragment"
+    android:gravity="center">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:layout_margin="32dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="@color/strongBlue"
+        android:fontFamily="@font/mouse_memoirs"
+        android:text="@string/warning" />
 
-</FrameLayout>
+    <Button android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:color="@color/strongBlue"
+        android:text="@string/confirmation"
+        android:layout_gravity="center"
+        android:fontFamily="@font/mouse_memoirs"
+        android:theme="@style/BlueButton"
+        android:textSize="30dp"
+        />
+
+</LinearLayout>

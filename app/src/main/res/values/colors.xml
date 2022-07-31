@@ -9,6 +9,8 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="background">#BEE1FF</color>
+    <color name="strongBlue">#0667BA</color>
+
     <color name="lightBlue">#FFFFFF</color>
     <color name="primaryText">#00300B</color>
     <color name="vividBackground">#EF6868</color>

@@ -1,7 +1,12 @@
 package forager.aid.harvest;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -13,7 +18,7 @@ import android.view.ViewGroup;
  * Use the {@link InformationFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class InformationFragment extends Fragment {
+public class InformationFragment extends DialogFragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +64,18 @@ public class InformationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_information, container, false);
+        return inflater.inflate(R.layout.fragment_information, null);
+    }
+
+
+    @NonNull
+    @Override
+    public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
+        View view = onCreateView(getLayoutInflater(),  null, savedInstanceState);
+
+        AlertDialog dialog = new AlertDialog.Builder(getContext())
+                .setView(view)
+                .create();
+        return dialog;
     }
 }
